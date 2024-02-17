@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechShop - Your One-Stop Tech Store</title>
+    <title>SuperTech Eshop - Home</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
     <header>
-        <h1>Welcome to TechShop</h1>
+        <h1>Welcome to SuperTech Eshop!</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./contactUs.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Discover the Latest Tech Products</h2>
-            <p>Shop our wide range of technology products, including smartphones, laptops, smart home devices, and more.</p>
-            <a href="#" class="btn">Shop Now</a>
+        <section id="slider">
+            <div class="slide" style="background-image: url('images/1.jpg');">
+                <div class="slide-content">
+                    <h2 style="color: red;">Get the Hottest Deals</h2>
+                    <p style="color: green;">Limited Time Offers</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/2.jpg');">
+                <div class="slide-content">
+                    <h2 style="color: blue;">Discover Amazing Gadgets</h2>
+                    <p style="color: yellow;">Shop Now!</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/3.jpg');">
+                <div class="slide-content">
+                    <h2 style="color: purple;">Unbeatable Prices</h2>
+                    <p style="color: orange;">Don't Miss Out!</p>
+                </div>
+            </div>
         </section>
 
-        <section class="featured-products">
-            <h2>Featured Products</h2>
-            <div class="product">
-                <img src="product1.jpg" alt="Product 1">
-                <h3>Product 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="btn">View Details</a>
+        <section id="animations">
+            <div class="box" style="background-color: pink;">
+                <h2 style="color: purple;">Special Offers</h2>
+                <p style="color: red;">Hurry Up!</p>
             </div>
-            <div class="product">
-                <img src="product2.jpg" alt="Product 2">
-                <h3>Product 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="btn">View Details</a>
+            <div class="box" style="background-color: yellow;">
+                <h2 style="color: green;">New Arrivals</h2>
+                <p style="color: blue;">Check Them Out!</p>
             </div>
-            <div class="product">
-                <img src="product3.jpg" alt="Product 3">
-                <h3>Product 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="btn">View Details</a>
+            <div class="box" style="background-color: orange;">
+                <h2 style="color: red;">Best Sellers</h2>
+                <p style="color: yellow;">Grab Yours Now!</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2022 TechShop. All rights reserved.</p>
+        <p>&copy; 2024 SuperTech Eshop. All rights reserved.</p>
     </footer>
 </body>
+
 </html>

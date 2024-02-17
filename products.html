@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperTech Eshop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to SuperTech Eshop!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="./contactUs.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+            <h2>Featured Products</h2>
+            <div class="product">
+                <img src="images/laptop1.jpg" alt="Laptop 1">
+                <h3>Laptop 1</h3>
+                <p class="price">$999.99</p>
+                <button onclick="addToCart('laptop1')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/phone1.jpg" alt="Phone 1">
+                <h3>Phone 1</h3>
+                <p class="price">$599.99</p>
+                <button onclick="addToCart('phone1')">Add to Cart</button>
+            </div>
+            <!-- Repeat product entries for more items -->
+        </section>
+
+        <aside id="cart">
+            <h2>Shopping Cart</h2>
+            <ul>
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <button onclick="checkout()">Checkout</button>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SuperTech Eshop. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
