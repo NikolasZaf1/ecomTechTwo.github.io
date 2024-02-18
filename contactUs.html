@@ -12,10 +12,20 @@
     <script src="poor-quality-script.js"></script>
     <style>
         body {
-            background-image: url('images/2.jpg'); /* Add your image URL here */
+            background-image: url('images/3.jpg'); /* Add your image URL here */
             background-size: cover;
             background-repeat: no-repeat;
             color: #fff;
+        }
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        #contact-form form {
+            width: 50%; /* Adjust width as needed */
         }
     </style>
 </head>
@@ -33,6 +43,20 @@
     </header>
 
     <main>
+        <section id="slider">
+            <div class="slide" style="background-image: url('images/1.jpg');">
+                <div class="slide-content">
+                    <h2 style="color: red;">Get the Hottest Deals</h2>
+                    <p style="color: green;">Limited Time Offers</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/2.jpg');">
+                <div class="slide-content">
+                    <h2 style="color: blue;">Discover Amazing Gadgets</h2>
+                    <p style="color: yellow;">Shop Now!</p>
+                </div>
+            </div>
+        </section>
         <section id="contact-form">
             <h2>Send us a Message</h2>
             <form>
