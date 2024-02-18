@@ -26,11 +26,19 @@ main {
 
 .product {
     margin-bottom: 30px;
+    width: calc(50% - 10px); /* Set width to 50% of the container minus margin */
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .product img {
     width: 200px;
     height: 200px;
+}
+
+#cart {
+    width: 100%; /* Ensure the cart takes full width */
+    text-align: center; /* Center align cart items */
 }
 
 footer {
@@ -66,15 +74,42 @@ footer {
 @keyframes slide {
     0% {
         opacity: 0;
+        transform: translateX(100%);
     }
     20% {
         opacity: 1;
+        transform: translateX(0%);
     }
     80% {
         opacity: 1;
+        transform: translateX(0%);
     }
     100% {
         opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    20% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    80% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
     }
 }
 
